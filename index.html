@@ -30,6 +30,10 @@
 
     <!-- Detected keywords -->
     <h2>Detected Keywords:</h2>
+        <!-- Loop through detected keywords and display them as list items -->
+        {% for keyword in detected_keywords %}
+            <li>{{ keyword }}</li>
+        {% endfor %}
     <py-script src="./app.py"></py-script>
 </body>
 </html>
