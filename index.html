@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Information</title>
+    <style>
+        /* Style for the map image */
+        #map {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Map image -->
+    <img id="map" src="map_image.jpg" alt="Race Map">
+    
+    <!-- Race info form -->
+    <form method="POST">
+        <label for="race_info">Enter race information:</label><br>
+        <textarea id="race_info" name="race_info" rows="4" cols="50">{{ race_info }}</textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Detected keywords -->
+    <h2>Detected Keywords:</h2>
+    <py-script src="./app.py"></py-script>
+</body>
+</html>
+
